@@ -3,7 +3,7 @@ name: Build & Deploy FastAPI
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -49,6 +49,10 @@ jobs:
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Create app directory on remote server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "mkdir -p /home/${{ secrets.SSH_USER }}/app"
 
       - name: Copy files to remote server
         run: |
