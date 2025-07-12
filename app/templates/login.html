@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Ética y Organización</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/login">
+  <input type="text" name="username" placeholder="Usuario">
+  <input type="password" name="password" placeholder="Contraseña">
+  <button type="submit">Entrar</button>
+</form>
+{% endblock %}

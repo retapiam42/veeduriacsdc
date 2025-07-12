@@ -1,0 +1,38 @@
+/* styles.css */
+.user-header {
+    background: linear-gradient(to right, #f0f9ff, #e0f2fe);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.user-info {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+}
+.user-avatar {
+    width: 3rem;
+    height: 3rem;
+}
+.user-role-badge {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.ethics-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid #3b82f6;
+}
+.ethics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.org-chart-container {
+    background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+    border-radius: 0.75rem;
+}
+.geoportal-card {
+    transition: all 0.2s ease;
+}
+.geoportal-card:hover {
+    transform: translateY(-2px);
+}

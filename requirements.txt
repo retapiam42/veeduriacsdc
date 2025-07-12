@@ -1,3 +1,7 @@
 fastapi
 uvicorn[standard]
 reflex==0.3.8
+sqlalchemy
+jinja2
+psycopg2-binary
+python-multipart
