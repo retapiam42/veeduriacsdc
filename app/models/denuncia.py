@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, LargeBinary
 from app.database import Base
 
 class Denuncia(Base):
@@ -7,3 +7,5 @@ class Denuncia(Base):
     id = Column(Integer, primary_key=True, index=True)
     titulo = Column(String)
     descripcion = Column(String)
+    archivo = Column(LargeBinary)
+
