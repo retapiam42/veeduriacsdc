@@ -1,7 +1,7 @@
 fastapi
-uvicorn[standard]
-reflex==0.3.8
-sqlalchemy
+uvicorn
 jinja2
+sqlalchemy
 psycopg2-binary
 python-multipart
+python-dotenv

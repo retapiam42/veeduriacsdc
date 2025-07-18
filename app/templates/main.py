@@ -1,9 +1,3 @@
-"""from fastapi import FastAPI
-app = FastAPI()
-@app.get("/")
-def leer_root():
-    return {"mensaje": "soy rafael tapia morales"}
-"""
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
